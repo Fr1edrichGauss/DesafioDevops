@@ -73,7 +73,7 @@ O projeto original apresenta um código em terraform responsável por provisiona
       ```
 
 ### 3. **Acesso web**:
-   - O código original permitia somente o tráfego de dados via ssh, visando permitir o acesso de convidados através da web, foram implementadas regras de segurança responsáveis por provir o acesso as portas: 80(HTTP) e 443(HTTPS). Isso torna a instância EC2 capaz de servir páginas web através do NGINX.
+   - O código original permitia somente o tráfego de dados via ssh, visando permitir o acesso de convidados através da web, foram implementadas regras de segurança responsáveis por provir o acesso as portas: HTTP (80) e HTTPS (443). Isso torna a instância EC2 capaz de servir páginas web através do NGINX.
 
 ```hcl
    ingress {
