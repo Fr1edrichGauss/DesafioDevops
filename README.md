@@ -122,7 +122,7 @@ terraform/
    ├── outputs.tf         # Saídas dos recursos
    ├── provider.tf        # Configuração do provedor
    └── userdata.sh        # Script de inicialização
-   ``
+   ```
 
 ---
 
