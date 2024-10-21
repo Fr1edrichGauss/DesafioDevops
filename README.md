@@ -136,8 +136,8 @@ terraform/
 ### Como rodar o projeto
 #### 1. Clonar o repositório 
 ```bash
-   git clone https://github.com/seu-usuario/devops-challenge.git
-   cd Desafio-Devops
+   git https://github.com/Fr1edrichGauss/DesafioDevops.git
+   cd DesafioDevops
 ```
 #### 2. Entrar na pasta terraform e inicializar o Terraform
 ```bash
@@ -152,6 +152,7 @@ terraform/
 ```bash
    terraform apply
 ```
+> Será necessário digitar "yes" no prompt para prosseguir com a criação da infraestrutura configurada.
 #### 5. Acessar a instância EC2 criada via SSH
 ```bash
    ssh -i <caminho-para-sua-chave.pem> ec2-user@<endereço-IP-público>
@@ -171,5 +172,5 @@ terraform/
 ```bash 
    terraform destroy
 ```
->Com esse comando toda a infraestrutura e recursos da AWS seram destruídos (liberados). para confirmar a destruição devemos digitar "yes" no prompt.
+> Com esse comando toda a infraestrutura e recursos da AWS seram destruídos (liberados). para confirmar a destruição devemos digitar "yes" no prompt.
 
