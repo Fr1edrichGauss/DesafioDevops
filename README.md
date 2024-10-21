@@ -63,14 +63,14 @@ O projeto original apresenta um código em terraform responsável por provisiona
 ### 2. **Instalação automática do NGINX:**:
    - Através do script userdata.sh que antes era responsável apenas pela atualização e upgrade do sistema operacional, agora é possível instalar o NGINX logo no boot da instância. Isso garante uma máquina com um servidor web básico já disponível assim que a instância está em funcionamento.
     
-    ```bash
+       ```bash
       # Atualiza pacotes e instala o NGINX
       apt-get update -y
       apt-get upgrade -y
       apt-get install -y nginx
       systemctl start nginx
       systemctl enable nginx
-    ```
+      ```
 
 ### 3. **Acesso web**:
    - O código original permitia somente o tráfego de dados via ssh, visando permitir o acesso de convidados através da web, foram implementadas regras de segurança responsáveis por provir o acesso as portas: 80(HTTP) e 443(HTTPS). Isso torna a instância EC2 capaz de servir páginas web através do NGINX.
